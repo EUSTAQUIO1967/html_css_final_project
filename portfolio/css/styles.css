@@ -1,0 +1,384 @@
+:root{
+
+    font-size: 62.5%;
+    --black-full: #000;
+    --black-secondary: #181C23;
+    --green-primary: #A6F750;
+    --grey-secondary: #383C44;
+    --defaul-border-radius: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+body{
+    background-color: var(--black-full);
+    color: #fff;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    margin-bottom: -3rem;
+}
+
+nav a{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 100%;
+}
+
+h2{
+    font-size: 3.2rem; 
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+h4{
+    font-size:2.2rem;
+}
+
+p{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem ;
+    text-align: justify;
+}
+
+nav h3{
+    line-height: 4.2rem;
+    margin-left: 6rem;
+    color: var(--green-primary)
+
+}
+
+
+.container{
+    padding-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    align-items: center;
+
+} 
+
+
+/* Estilo do menu */
+
+.header{
+    position:fixed;
+    display:flex;
+    width: 100%;
+    height: 8rem;
+    background-color: var(--black-secondary);
+    align-items: center;
+    
+}
+
+.btn{
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem 4rem;
+    border-style: none;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--green-primary);
+
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+
+nav{
+    display: flex;
+    
+}
+
+.header nav h3{
+    margin-top: -2rem;
+}
+
+a, 
+.btn
+{
+    /* margin-top: 2rem; */
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+
+nav .green{
+    
+    color: var(--green-primary);
+    text-decoration: none;
+}
+
+nav menu{
+    display:flex;
+    position: absolute;
+    right: 5rem;
+    margin-top: -1.5rem
+}
+
+nav menu{
+    list-style: none;
+}
+
+nav menu li a{
+    cursor: progress;
+    text-decoration: none;
+    margin-left: 6rem;
+}
+
+
+
+/* ESTILO SECTION PRESENTATION */
+
+main .container section{
+    margin-top: 8rem;
+}
+
+main .presentation{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+main .presentation div {
+    margin-top: 5rem;
+}
+
+main .presentation div:first-child {
+
+   height: 20rem;
+   width: 40%;
+}
+
+main .presentation div:last-child {
+    width: 100%;
+    align-content: center;
+ }
+ 
+
+#foto-perfil{
+    display: flex;
+    align-items: center;
+    background: #f0efef;
+    border-radius: 50%;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0,0,0,0.5);
+    width: 41rem;
+    height: 41rem;
+    margin: 5rem auto;
+    padding-left: 1.5rem;
+    border: 2rem dashed green;
+}
+
+#foto-perfil img{
+    min-width: 38rem;
+    max-height: 39rem;
+    width: auto;
+    height: auto; 
+    border-radius: 50%;
+    margin-left: -1.4rem;
+    margin-top: 0.2rem;
+    padding-left:0rem;
+    box-shadow: 0.5rem 0.5rem 1rem 0.5rem rgba(0,0,0,0.5);
+}
+
+/*  ESTILO SECTION about */
+
+main .about .description{
+    width: 100%;
+}
+
+
+main .about{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+
+
+}
+
+main .about .sub-description {
+    display: flex;
+    gap: 1rem;
+}
+
+.about .boxes {
+
+    display: flex;
+    justify-content: space-evenly;
+    gap:2rem;
+    
+    
+}
+
+
+.about .boxes .box {
+    width: 25.6rem;
+    height: 25.4rem;
+    background-color: var(--grey-secondary);
+    color: #fff;
+    padding-left: 0.8rem;
+    padding-top: 5rem;
+}
+
+.about .boxes .box:hover {
+    border: 2px solid var(--green-primary)
+}
+
+
+/* ESTILO SECTION SERVICES */
+
+main .services {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    
+}
+
+main .services .boxes-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+main .services .boxes-services .box {
+    margin-top: 1.5rem;
+    width: 27rem;
+    height: 27rem;
+    border: 2px solid #fff;
+    border-radius: var(--defaul-border-radius);
+    padding-left: 0.8rem; 
+    padding-top: 4rem;
+    
+}
+
+main .services .boxes-services .box:nth-child(2n-1) {
+    border-color: var(--green-primary);
+}
+
+
+.green-default{
+    color: var(--green-primary);
+}
+
+
+.span-grande{
+    font-size: 9.6rem;
+    font-weight: 800;
+}
+
+/* ESTILO DA SECTION CONTACT */
+
+main .contact {
+    display:flex;
+    padding-top: 2rem;
+    display: flex;
+    margin-bottom: 6rem ;
+}
+
+main contact div {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+main .contact .form{
+    display:flex;
+    flex-direction: column;
+    float: right;
+}
+
+/* main .contact .form  */
+textarea, input[type='text']{
+    width: 55rem;
+    border-radius: var(--defaul-border-radius);
+    background-color: var(--grey-secondary);
+    border: 0px solid var(--grey-secondary);
+    color: #fff;
+    padding-left: 0.2rem;
+}
+
+textarea{
+    padding:2rem; 
+    height: 8rem;
+    margin-top: 1rem;
+    
+}
+
+input[type='text']{
+    padding-left: 2rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+
+textarea:hover,
+ input[type='text']:hover{
+    border: 2px solid blue;
+}
+
+.contact .desc{
+    width: 40%;
+}
+.contact .form{
+    margin-left: 2rem;
+}
+
+/* Estilo do footer */
+
+.footer{
+    display:flex;
+    width: 100%;
+    height: 8rem;
+    background-color: #181C23;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.footer ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    left: 30rem;
+}
+
+
+.footer p {
+    margin-top: -3rem;
+}
+.footer ul li {
+    list-style: none;
+    margin-top: -4rem;
+    margin-left: 1.6rem; 
+    font-size: 1.6rem;
+}
+
+.footer{
+    /* display: block; */
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    
+} 
