@@ -1,0 +1,339 @@
+
+// FONT DESIGN PROJETO
+//https://www.figma.com/file/KhSQ6ifCukp73WvjZZW2yo/Portfolio-Landing-Page?type=design&node-id=0%3A1&mode=design&t=8sh3XpFXdfFQg64n-1
+
+:root{
+    font-size: 62.5%;
+    --black-full: #000;
+    --black-secondary: #181C23;
+    --green-primary: #A6F750;
+    --grey-secondary: #383C44;
+    --defaul-border-radius: 0.8rem;
+      font-family: Poppins, sans-serif;
+}
+
+body{
+    background-color: var(--black-full);
+    
+    color: #fff;
+    font-family: Poppins, sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+
+h1{
+    font-size: 100%;
+}
+
+h2{
+    font-size: 3.2rem; 
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+h4{
+    font-size:2.2rem;
+}
+
+p{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem ;
+    text-align: justify;
+}
+
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+    align-items: center;
+} 
+
+.btn{
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding: 1.5rem 4rem;
+    border-style: none;
+    margin-top: 1rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: var(--green-primary);
+
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+
+.font-ws-green{
+    font-size: 4.8rem; 
+    color:#A6F750;
+}
+
+.font-ws-white{
+    font-size: 4.8rem; 
+    color:#FFFFFF;        
+}
+
+
+.span-large{
+    font-size: 9.6rem;
+    font-weight: 800;
+}
+
+.green-default{
+    color: var(--green-primary);
+}
+
+
+// BARRA DE NAVEGAÇÃO
+
+.navbar{
+    background-color: var(--black-secondary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+
+    & a{
+        font-size: 2rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    & h3{
+        line-height: 4.2rem;
+        margin-left: 6rem;
+        color: var(--green-primary)
+    
+    }
+    
+    & .navbar__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+
+        &-item{
+            list-style: none;
+            margin: 4rem;
+        
+        & .green{
+            color: var(--green-primary)
+        }    
+
+        }
+    }
+}
+
+
+// ESTILO PRESENTATION
+
+.presentation{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80rem;
+    gap: 6rem;
+  
+
+    & .foto-perfil{
+        border-radius: 50%; 
+        border: 0.1rem solid #fff;
+        box-shadow: 0.5rem  0.5rem 1rem 0.5rem #fff;
+        box-sizing: border-box;
+        width: 45rem;
+        height: 45rem;
+     }
+
+     &-left p{
+        margin-bottom: 6rem;
+        
+     }
+
+     &-left h2{
+        font-size: 6rem;
+     }
+    
+
+}
+
+
+// ESTILO ABOUT-ME
+
+.about{
+
+    margin-bottom: 10rem;
+
+    &__sub-description{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 5rem;
+
+        &-coment p{
+           // background-color: #FFFFFF;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__boxes{
+        display: flex;
+        gap: 2rem;
+
+
+        &-box{
+            max-width: 25.6rem;
+            width: 100%;
+            height: 25.6rem;
+            border: 0rem solid #FFFFFF;
+            padding:2rem;
+            background-color: var(--grey-secondary);
+            transition: filter 2s;
+
+            &:hover{
+                filter:brightness(1.5);
+                transition: filter 0.5s;
+                border: 0.2rem solid var(--green-primary)
+            }
+            
+        }
+
+    }
+}
+
+
+
+// ESTILO SECTION SERVICES 
+
+.services{
+    margin-bottom:10rem;
+
+    & h2{
+        margin-bottom: 3rem;
+    }
+
+    &__boxes-services{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        
+        
+
+        &-box{
+            border: 2px solid #FFFFFF;
+            padding: 2rem;
+            border-radius: 2rem;
+            max-width: 33.9rem;
+            width: 100%;
+            min-height: 33.9rem;
+            height: auto;
+            box-sizing: border-box;
+
+
+        &.border-green {
+                border: 0.3rem solid var(--green-primary);
+            }
+        }
+
+    }
+}
+
+
+// ESTILO CONTACT
+
+.contact{
+
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+
+    &__desc{
+        min-width: 30rem;
+        width: 100%;    
+        
+    }
+
+    &__form{
+            width: 100%;
+   }
+}
+
+textarea, input[type='text']{
+    min-width: 50rem;
+    width: 100%;
+    border-radius: var(--defaul-border-radius);
+    background-color: var(--grey-secondary);
+    border: 0px solid var(--grey-secondary);
+    color: #FFFFFF;
+    padding-left: 0.2rem;
+    font-size: 1.8rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+}
+
+textarea{
+    padding:2rem; 
+    height: 8rem;
+    margin-top: 1rem;
+    
+}
+
+input[type='text']{
+    padding-left: 2rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+
+
+textarea:hover,
+input[type='text']:hover{
+    border: 2px solid blue;
+}
+
+
+.footer{
+
+    background-color: var(--black-secondary);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+
+    &__links{
+           
+            display: flex;
+
+            &-list{
+                display: flex;
+
+                &-item{
+                    list-style: none;
+                    justify-content: space-between;
+                   
+                    a{
+                        color: #FFFFFF;
+                        padding: 2rem;
+                    }
+                }
+            }
+        }
+       
+}

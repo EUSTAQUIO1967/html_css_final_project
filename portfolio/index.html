@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eustáquio Santos - Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 </head>
 <body>
     <header class="header">
-        <nav>
+        <nav class="navbar">
          <a href="index.html"><h3>Eustáquio Santos</h3></a>
-            <menu>
-                <li><a class="green" href="index.html">Home</a></li>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+            <menu class="navbar__nav">
+                <li class="navbar__nav-item"><a class="green" href="index.html">Home</a></li>
+                <li class="navbar__nav-item"><a href="#about">Sobre mim</a></li>
+                <li class="navbar__nav-item"><a href="#projects">Projetos</a></li>
+                <li class="navbar__nav-item"><a href="#contact">Contato</a></li>
             </menu>
         </nav>
     </header>
@@ -24,73 +28,72 @@
     <!-- Apresentação -->
     <main>
         <div class="container">
-         
             <section class="presentation" id="presentation">
-                <div>
-                    <h3>Olá, Eu sou</h3>
-                <h2>Eustáquio Santos</h2>
-                <p>Apaixonado por TI desde 1989. Por esse motivo desenvolvi habilidades em algumas linguagens de programação</p>
-                <a class="btn btn-primary" href="#about">Sobre mim</a>
-            </div>
-            
-            <div id="foto-perfil" >
+                <div class="presentation-left">
+                    <hgroup>
+                        <h3>Olá, Eu sou</h3>
+                        <h2>Eustáquio Santos</h2>
+                        <p>Apaixonado por TI desde 1989. Por esse motivo desenvolvi habilidades em algumas linguagens de programação</p>
+                    </hgroup>
+                    <a class="btn btn-primary" href="#about">Sobre mim</a>
+                </div>
+                        
                 <figure>
-                    <img src="images/foto_34.png" alt="Foto de Eustáquio Santos" title="Foto de Eustáquio Santos">
+                    <img  class="foto-perfil" src="images/foto_34.png" alt="Foto de Eustáquio Santos" title="Foto de Eustáquio Santos">
                 </figure>
-            </div>
+            
         </section>
 
         <!-- SECTION SOBRE MIM -->
 
         <section class="about" id="about">
-
-                <div class="description">
-                    
+                <div class="about__description">
                     <h2><span class="green-default"> Sobre mim:</span></h2>
                     <p>Desenvolvi algumas habilidades em programação que podem ser exploradas por 
                     sua empresa em caso de contratação</p>
                 </div>
-                <div class="sub-description">
+
+                <div class="about__sub-description">
                     <div>
-                        <span class="green-default span-grande">5+</span>
+                        <span class="green-default span-large">5+</span>
                     </div>
-                    <div>
+                    <div class="about__sub-description-coment">
                         <p>
                         Olá, meu nome é Eustáquio José Santos, sou desenvolvedor web Fullstack, designer de UI e desenvolvedor móvel. Aperfeiçoei minhas habilidades em Desenvolvimento Web e tenho uma compreensão básica dos princípios avançados de design de UI.
                         Aqui estão as principais habilidades que possuo.
                         </p>
                     </div>
-
                 </div>
             
-                <div class="boxes">
-                    <div class="box">
+                <div class="about__boxes">
+                    <div class="about__boxes-box">
                         <p>
-                            <span style="font-size: 48px; color:#A6F750">
+                            <span class="font-ws-green">
                                 <i class="fa-solid fa-code"></i>
                             </span>
                         </p>
                           
                         <h4>WEB DEV</h4>
                     </div>
-                    <div class="box">
+                    <div class="about__boxes-box">
                             <p>
-                                <span style="font-size: 48px; color: #fff">
+                                <span class="font-ws-white">
                                     <i class="fa-solid fa-mug-hot"></i>
-                                                                    </span>
+                                </span>
                             </p>
                         <h4>JAVA DEV</h4>
                     </div>
-                    <div class="box">
+                    <div class="about__boxes-box">
                         <p>
-                            <span style="font-size: 48px; color:#A6F750">
+                            <span class="font-ws-green">
                                 <i class="fa-solid fa-laptop-code"></i>
                             </span>
                         </p>
-                        <h4>PYTHON DEV</h4></div>
-                    <div class="box">
+                        <h4>PYTHON DEV</h4>
+                    </div>
+                    <div class="about__boxes-box">
                         <p>
-                            <span style="font-size: 48px; color: #fff">
+                            <span class="font-ws-white">
                                 <i class="fa-solid fa-terminal"></i>
                             </span>
                         </p>
@@ -104,8 +107,8 @@
         <section class="services" id="projects">
             <h2><span class="green-default">
                  Os serviços que ofereço: </span></h2>
-                <div class="boxes-services">
-                    <div class="box">
+                <div class="services__boxes-services">
+                    <div class="services__boxes-services-box  border-green">
                         <p>
                             <span style="font-size: 48px; color:#fff">
                             <i class="fa-solid fa-diagram-project"></i>
@@ -113,7 +116,8 @@
                         <h4>UI & UX DESIGNER</h4>
                         <p>Eu desenho lindas interfaces web com Figma e Adove XD</p>
                     </div>
-                    <div class="box">
+
+                    <div class="services__boxes-services-box">
                         <p>
                             <span style="font-size: 48px; color:#A6F750">
                                 <i class="fa-solid fa-code"></i>
@@ -122,7 +126,8 @@
                         <h4><span class="green-default">WEB DEVELOPEMENT</span></h4>
                         <p>Eu crio lindas iterfaces com HTML, CSS e JavaScript simples e também frameworks como Angular e ReactJS</p>
                     </div>
-                    <div class="box">
+
+                    <div class="services__boxes-services-box border-green">
                         <p>
                             <span style="font-size: 48px; color:#fff">
                                 <i class="fa-solid fa-laptop-code"></i>
@@ -132,7 +137,8 @@
                         <h4>MOBILE DEVELOPMENT</h4>
                         <p>Sou um desenvolvedor móvel especialista. Tenho experiência com Flutter e React Native.</p>
                     </div>
-                    <div class="box">
+
+                    <div class="services__boxes-services-box">
                         <p>
                             <span style="font-size: 48px; color:#A6F750">
                                 <i class="fa-solid fa-code-branch"></i>
@@ -141,7 +147,8 @@
                         <h4><span class="green-default">VERSION CONTROL</span></h4>
                         <p>Posso usar bem sistemas de controle de versão, e Git e Mecurial são minha ferramenta preferida.</p>
                     </div>
-                    <div class="box">
+
+                    <div class="services__boxes-services-box border-green">
                         <p>
                             <span style="font-size: 48px; color:fff">
                                 <i class="fa-solid fa-circle-nodes"></i>
@@ -150,7 +157,7 @@
                         <h4>NPM AND NODEJS</h4>
                         <p>Eu tenho uma compreensão básica do NPM. Também posso desenvolver aplicações de uso geral com NodeJS</p>
                     </div>
-                    <div class="box">
+                    <div class="services__boxes-services-box">
                         <p>
                             <span style="font-size: 48px; color:#A6F750">
                                 <i class="fa-solid fa-laptop-code"></i>
@@ -167,8 +174,9 @@
 
     <!-- SECTION CONTACT -->
     <section class="contact" id="contact">
-        <div class="desc">
-            <h2>Contacte-me:</h2>
+
+        <div class="contact__desc">
+            <h2 class="green-default">Contacte-me:</h2>
             <p>Você deseja conhecer mais sobre mim?</p>
             <p>Por favor entre em contato</p>
             <a href="">
@@ -182,7 +190,8 @@
               </span>
             </a>
         </div>
-        <div class="form">
+
+        <div class="contact__form">
             <h4>Entre em contato comigo, vamos fazer mágica juntos</h4>
             <form action="">
                 <div>
@@ -201,21 +210,26 @@
     </section>
 
 
-    </div>
+    </div><!--  fim do container -->
 
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>@2024 Eustáquio Santos</p>
-            <ul>
-                <li>Web Developer</li>
-                <li>DBA</li>
-                <li>SQL Server</li>
-                <li>MySql</li>
-                <li>PostgreSql</li>
-            </ul>
-        </div>
+           <div>
+                <p>@2024 Eustáquio Santos</p>
+           </div>
+                
+            <div class="footer__links">
+                <ul class="footer__links-list">
+                    <li class="footer__links-list-item"><a href="#">Web Developer</a></li>
+                    <li class="footer__links-list-item"><a href="#">DBA</a></li>
+                    <li class="footer__links-list-item"><a href="#">SQL Server</a></li>
+                    <li class="footer__links-list-item"><a href="#">MySql</a></li>
+                    <li class="footer__links-list-item"><a href="#">PostgreSql</a></li>
+                    <li class="footer__links-list-item"><a href="#">Designed by @community</a></li>
+                </ul>
+            </div>    
+       
     </footer>
 
 
